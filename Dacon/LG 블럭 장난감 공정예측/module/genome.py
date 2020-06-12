@@ -31,7 +31,7 @@ class Genome():
         
         # Event 종류
         self.mask = np.zeros([5], np.bool) # 가능한 이벤트 검사용 마스크
-        self.event_map = {0:'CHECK_1', 1:'CHECK_2', 2:'CHECK_3', 3:'CHECK_4', 4:'PROCESS'}
+        self.event_map = {0:'CHECK_1', 1:'CHECK_2', 2:'CHECK_3', 3:'CHECK_4', 4:'PROCESS', 5:'CHANGE_24',6:'CHANGE_14',7:'CHANGE_34'}
         
         self.check_time = 28    # 28시간 검사를 완료했는지 검사, CHECK Event시 -1, processtime_time >=98 이면 28
         self.process = 0        # 생산 가능 여부, 0 이면 28 시간 검사 필요
@@ -95,6 +95,7 @@ class Genome():
         order = self.create_order(order)
         self.submission = submission_ini
         self.submission.loc[:, 'PRT_1':'PRT_4'] = 0
+        change_time,change_point =0,0
         for s in range(self.submission.shape[0]):
             self.update_mask()
             inputs = np.array(order.loc[s//24:(s//24+30), 'BLK_1':'BLK_4']).reshape(-1)
@@ -142,6 +143,21 @@ class Genome():
                 if self.process_time == 140:
                     self.process = 0
                     self.check_time = 28
+            elif out1 == 'CHANGE_24' or out1 == 'CHANGE_14':
+                self.process_time += 13
+                change_time +=13
+                change_point +=1
+                if self.process_time == 140:
+                    self.process = 0
+                    self.check_time = 28
+            elif out1 == 'CHANGE_34':
+                self.process_time += 6
+                change_time +=6
+                change_point +=1
+                if self.process_time == 140:
+                    self.process = 0
+                    self.check_time = 28
+           
 
             self.submission.loc[s, 'Event_A'] = out1
             if self.submission.loc[s, 'Event_A'] == 'PROCESS':
@@ -162,10 +178,10 @@ class Genome():
         self.process_mode = 0
         self.process_time = 0
         
-        return self.submission    
+        return self.submission, change_time    
     
 def genome_score(genome):
-    submission = genome.predict(order_ini)    
+    submission,_ = genome.predict(order_ini)    
     genome.submission = submission    
     genome.score, _ = simulator.get_score(submission)    
     return genome
