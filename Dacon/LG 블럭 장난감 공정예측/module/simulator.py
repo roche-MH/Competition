@@ -175,9 +175,9 @@ class Simulator:
         blk_diff_m = 0
         blk_diff_p = 0
         for item in blk_diffs:
-            if item < 0:
+            if item < 0: # blk_diff_m = 부족분
                 blk_diff_m = blk_diff_m + abs(item)
-            if item > 0:
+            if item > 0: # blk_diff_m = 초과분
                 blk_diff_p = blk_diff_p + abs(item)
         score = blk_diff_m + blk_diff_p
         return score
@@ -187,9 +187,10 @@ class Simulator:
         out_1 = self.cal_schedule_part_1(df)
         out_2 = self.cal_schedule_part_2(df, line='A')
         out_3 = self.cal_schedule_part_2(df, line='B')
-        out = out_1 + out_2 + out_3
+        out = out_1 + out_2 + out_3 #시간?
         out = self.add_stock(out, self.stock)
         order = self.order_rescale(out, self.order)                    
+        print(order)
         out, blk_diffs = self.cal_stock(out, order)                    
         score = self.cal_score(blk_diffs) 
         return score, out
