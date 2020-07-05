@@ -4,9 +4,9 @@
 
 | No.  | Competition.                                                 | Rank.                 | review & code                                                |
 | ---- | ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------ |
-| 1    | [공공 데이터 활용 온도 추정 AI 경진대회](https://dacon.io/competitions/official/235584/overview/) | 37 / 1073             | [Done](https://github.com/roche-MH/Competition/tree/master/Dacon/AI프렌즈 시즌1온도 추정)) |
-| 2    | [블럭 장난감 제조 공정 최적화 AI경진대회](https://dacon.io/competitions/official/235612/overview/) | DQ. (perhaps 4 / 598) | [Done](https://github.com/roche-MH/Competition/tree/master/Dacon/LG 블럭 장난감 공정예측)) |
-| 3    | [제주 신용카드 빅데이터 경진대회](https://dacon.io/competitions/official/235615/overview/) | - (as of 1st July)    | [Not Yet](https://github.com/roche-MH/Competition/tree/master/Dacon/jeju_card)                                                  |
+| 1    | [공공 데이터 활용 온도 추정 AI 경진대회](https://dacon.io/competitions/official/235584/overview/) | 37 / 1073             | [Done](https://github.com/roche-MH/Competition/tree/master/Dacon/AI프렌즈 시즌1온도 추정) |
+| 2    | [블럭 장난감 제조 공정 최적화 AI경진대회](https://dacon.io/competitions/official/235612/overview/) | DQ. (perhaps 4 / 598) | [Done](https://github.com/roche-MH/Competition/tree/master/Dacon/LG 블럭 장난감 공정예측) |
+| 3    | [제주 신용카드 빅데이터 경진대회](https://dacon.io/competitions/official/235615/overview/) | - (as of 1st July)    | [ing](https://github.com/roche-MH/Competition/tree/master/Dacon/jeju_card)                                                  |
 
 
 
