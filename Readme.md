@@ -10,15 +10,6 @@
 | 4    | [음성 중첩 데이터 분류 AI 경진대회](https://dacon.io/competitions/official/235615/overview/) | - (as of 1st July)       | [Not Yet]()                                                  |
 
 
-
-## Kaggle Challenge
-
-| No.  | Competition.                                                 | Rank.              | review & code |
-| ---- | ------------------------------------------------------------ | ------------------ | ------------- |
-| 1    | [Google Landmark Retrieval 2020](https://www.kaggle.com/c/landmark-retrieval-2020) | - (as of 1st July) | [Not Yet]()   |
-
-
-
 ## Idea Challenge
 
 | No.  | Competition.                                      | IDEA                                   |
