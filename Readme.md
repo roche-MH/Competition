@@ -11,6 +11,8 @@
 
 ## AI-korea
 
+
+
 ## Idea Challenge
 
 | No.  | Competition.                                      | IDEA                                   |
