@@ -9,8 +9,9 @@
 | 3    | [제주 신용카드 빅데이터 경진대회](https://dacon.io/competitions/official/235615/overview/) | 123 / 1456            | [Done](https://github.com/roche-MH/Competition/tree/master/Dacon/jeju_card) |
 | 4    | [산업제어시스템 보안위협 탐지 AI 경진대회](https://dacon.io/competitions/official/235624/leaderboard/) | 37/854                |                                                       |
 
-## AI-korea (Join to Team. 놀면 뭐하늬)
+## 2020 인공지능 문제해결 경진대회(정보통신산업진흥원) 
 
+(Join to Team. 놀면 뭐하늬)
 예선: 10.26~10.28
 
 본선: 10.30 ~ 11.13
