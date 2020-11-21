@@ -1,5 +1,14 @@
 # Challenge
 
+## kaggle
+
+| No.  | Competition.                                                 | Rank.                 | review & code                                                |
+| ---- | ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------ |
+| 1    | Cassava Leaf Disease Classification |             |  |
+| 2    | 2020 Kaggle ML & DS Survey |             |  |
+
+
+
 ## Dacon Challenge
 
 | No.  | Competition.                                                 | Rank.                 | review & code                                                |
