@@ -4,7 +4,7 @@
 
 | No.  | Competition.                                                 | Rank.                 | review & code                                                |
 | ---- | ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------ |
-| 1    | Cassava Leaf Disease Classification |             |  |
+| 1    | Cassava Leaf Disease Classification |     No.49        |  |
 | 2    | 2020 Kaggle ML & DS Survey |             |  |
 
 
